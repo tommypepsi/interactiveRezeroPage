@@ -1,0 +1,467 @@
+body{
+	display:flex;			/*Plus ou moins nouveau dans CSS3 sert a mieux organisé les div à l'intérieur*/
+	margin:0px;
+	padding:0px;
+	
+}
+
+ul{
+	margin:0px;
+	padding:0px;
+}
+
+
+
+li{
+	padding:0px;
+	z-index: 1;
+	border-bottom:solid;
+	line-height:10px;
+	text-align:right;
+	padding-left:80px;
+	max-height:184px;
+	background-color:rgba(0,0,0,.3);
+}
+
+li a{
+	color:black;
+	font-size:26px;
+	font-weight:bold;
+	position:absolute;
+	left:10px;
+	bottom:92px;
+	z-index: 1;
+	transition: opacity 1s;
+}
+
+#li1{
+	position:relative;
+	overflow: hidden;
+	
+}
+
+#li1:before{
+	content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+	opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: opacity 1s;
+    background-image: url(../images/background_test2.png);
+    background-repeat: no-repeat;
+	
+}
+
+#li2{
+	position:relative;
+	overflow: hidden;
+	
+}
+
+#li2:before{
+	content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+	opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: opacity 1s;
+    background-image: url(../images/background_test2.png);
+    background-repeat: no-repeat;
+	
+}
+
+#li3{
+	position:relative;
+	overflow: hidden;
+	
+}
+
+#li3:before{
+	content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+	opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: opacity 1s;
+    background-image: url(../images/background_test2.png);
+    background-repeat: no-repeat;
+	
+}
+
+#li4{
+	position:relative;
+	overflow: hidden;
+	
+}
+
+#li4:before{
+	content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+	opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: opacity 1s;
+    background-image: url(../images/background_test2.png);
+    background-repeat: no-repeat;
+	
+}
+
+#li5{
+	position:relative;
+	overflow: hidden;
+	
+}
+
+#li5:before{
+	content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+	opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: opacity 1s;
+    background-image: url(../images/background_test2.png);
+    background-repeat: no-repeat;
+	
+}
+
+#li6{
+	position:relative;
+	overflow: hidden;
+	
+}
+
+#li6:before{
+	content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+	opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: opacity 1s;
+    background-image: url(../images/background_test2.png);
+    background-repeat: no-repeat;
+	
+}
+
+#player{
+	width:64px;
+	height:96px;
+	overflow:hidden;
+	position:absolute;
+	z-index:3;
+}
+
+#bubble{
+  position:absolute;
+  padding:15px;
+  min-width:100px;
+  max-width:300px;
+  color:#fff;
+  background:#c81e2b;
+  /* css3 */
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#f04349), to(#c81e2b));
+  background:-moz-linear-gradient(#f04349, #c81e2b);
+  background:-o-linear-gradient(#f04349, #c81e2b);
+  background:linear-gradient(#f04349, #c81e2b);
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  z-index:101;
+}
+
+/* creates the wider right-angled triangle */
+#bubble:before {
+  content:"";
+  position:absolute;
+  bottom:-10px; /* value = - border-top-width - border-bottom-width */
+  left:60px; /* controls horizontal position */
+  border:0;
+  border-right-width:30px; /* vary this value to change the angle of the vertex */
+  border-bottom-width:10px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :after */
+  border-style:solid;
+  border-color:transparent #c81e2b;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+  z-index:101;
+}
+
+
+#playerimg, #playerspeak, #revole{
+	width: 256px;
+	z-index:3;
+}
+
+.beatrice{
+	width:96px;
+	height:91px;
+	overflow:hidden;
+	display:inline-block;
+	z-index:2;
+	position: relative; 
+}
+
+img[alt="beatrice"]{
+	width:384px;
+	height:91px;
+	opacity:0;
+	-webkit-transition: opacity 1s; /* Safari */
+    transition: opacity 1s;
+	z-index:2;
+}
+
+.porte{
+	width:124px;
+	height:184px;
+	overflow:hidden;
+	display:inline-block;
+	z-index:2;
+	position: relative; 
+}
+
+img[alt="porte"]{
+	height:184px;
+	display:inline-block;
+	z-index:2;
+}
+
+.cadre{
+	position: relative; 
+	height:184px;
+	display:inline-block;
+	z-index:100;
+	
+}
+
+nav{
+	display: inline-block;
+	z-index: 0;
+	float:left;
+	min-width:312px;
+	background-color:#c81e2b;
+}
+
+#contenu{
+	flex-grow:2;
+	float:left;
+	background: linear-gradient(to right, #c81e2b,rgba(0,0,0,1),rgba(0,0,0,.95),rgba(0,0,0,.9),rgba(0,0,0,.95),rgba(0,0,0,1),#c81e2b); 
+	padding-left: 120px;
+	padding-right: 150px;
+}
+
+.instruction{
+	padding:5px;
+	display:none;
+	font-size:12px;
+	background-color: rgba(0,0,0,.5);
+	border-radius:5px;
+}
+
+#instruction{
+	position:absolute;
+	color:white;
+}
+
+div{
+	transition:opacity 1s;
+}
+
+.pages{
+	display:none;
+	opacity:0;
+}
+
+#contenu
+{
+	transition: all 1s;
+}
+
+img{
+	max-height:600px;
+}
+
+#contenuMainScreen{
+	position:absolute;
+}
+
+#personnage{
+	padding-top:30px;
+	text-align:center;
+	
+}
+
+.personnages{
+	display: inline-block;
+	font-size:25px;
+	font-weight:bold;
+	text-align:center;
+	color:white;
+}
+
+.media{
+	display: inline-block;
+	font-size:25px;
+	font-weight:bold;
+	text-align:center;
+	color:white;
+}
+
+#medias{
+	text-align:center;
+	
+}
+
+#wiki{
+	height:200px;
+}
+
+#table{
+	margin:auto;
+	margin-top:100px;
+	text-align:right;
+}
+
+#table a{
+	color:white;
+	font-size:20px;
+}
+
+img[alt="wikia"]
+{
+	background: radial-gradient(#c81e2b, rgba(255,255,255,0) 70%); /* Standard syntax */
+}
+
+img[alt="reddit"]
+{
+	max-height:150px;
+	max-width:250px;
+	vertical-align:middle;
+}
+
+img[alt="crunchyroll"]{
+	max-width:450px;
+}
+
+.center{
+	text-align:center;
+}
+
+.background_red{
+	background: radial-gradient(#c81e2b, rgba(255,255,255,0) 70%);
+}
+
+.left{
+	text-align:left;
+}
+
+td{
+	vertical-align:middle;
+}
+
+#contact{
+	text-align:center;
+	padding-top:25%;
+	color:white;
+	font-size:20px;
+	padding-left:100px;
+}
+
+label {
+    float: left;
+    width: 30%;
+    margin-right: 5px;
+    text-align: right;
+    font-weight: bold;
+}
+input[type="submit"]{
+	font-size:25px;
+	background: radial-gradient(#c81e2b, rgba(255,255,255,0) 70%);
+	width:300px;
+	height:50px;
+	border: none;
+}
+input[type="reset"]{
+	font-size:25px;
+	background: radial-gradient(#c81e2b, rgba(255,255,255,0) 70%);
+	width:400px;
+	height:50px;
+	border: none;
+}
+input[type="reset"]:hover{
+	font-size:30px;
+}
+input[type="reset"]:active{
+	font-size:20px;
+}
+input[type="submit"]:hover{
+	font-size:30px;
+}
+input[type="submit"]:active{
+	font-size:20px;
+}
+
+#episodes{
+	padding-left:5%;
+	padding-right:5%;
+	text-align:center;
+}
+
+.episodes{
+	display:inline-block;
+	text-align:center;
+	margin:10px;
+	background: radial-gradient(#c81e2b, rgba(255,255,255,0) 70%);
+	height:300px;
+	width:180px;
+	vertical-align:middle;
+	padding-left:60px;
+	padding-right:60px;
+}
+
+.numEp, .nomEp{
+	position:relative;
+	top:40%;
+	vertical-align:middle;
+}
+
+.numEp{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.nomEp{
+	color:white;
+	font-size: 20px;
+	font-weight:bold;
+}
+
+#date{
+	position:fixed;
+	right:10px;
+	top:10px;
+	color:white;
+	font-weight:bold;
+}

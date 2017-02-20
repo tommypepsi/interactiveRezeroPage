@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<!--
+	Auteur		: Tommy Gaudreau
+	Groupe		: 415AI
+-->
+<html lang="fr"><head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+        <title>RE:Zero</title>
+		<link id="style" rel="stylesheet" href="css/style.css">
+		
+		<meta name="author" content="Tommy Gaudreau">
+		<meta name="description" content="Un site avec des méchaniques d'un petit jeu sur le thème de RE:Zero">
+		<meta name="keywords" content="RE:Zero, jeu, Tappei, Nagatsuki, White Fox, ">
+		
+		<script src="js/script.js"></script>
+		<script src="js/script2.js"></script>
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		<script src="js/validation.js"></script>
+		<style>
+		</style>
+    </head>
+ 
+    <body id="body">
+		
+		<!-----------------Menu----------------->
+		<nav>
+			<ul>
+				<li id="li1">
+					<a href="javascript:pageLoadClick('pages','accueil');" id="lien1">Accueil</a><div class="beatrice"><img src="images/beatrice_sprite.png" alt="beatrice" id="beatrice1" style="margin-left:0px;"></div><div class="porte"><img src="images/porte_sprite.png" alt="porte" id="porte1" style="margin-left:0px;"></div><div class="cadre" id="cadre1"><img src="images/cadre_porte.png" alt="cadre"></div>
+				</li>
+				<li id="li2">
+					<a href="javascript:pageLoadClick('pages','episodes');" id="lien2">Épisodes</a><div class="beatrice"><img src="images/beatrice_sprite.png" alt="beatrice" id="beatrice2" style="margin-left:0px;"></div><div class="porte"><img src="images/porte_sprite.png" alt="porte" id="porte2" style="margin-left:0px;"></div><div class="cadre" id="cadre2"><img src="images/cadre_porte.png" alt="cadre"></div>
+				</li>
+				<li id="li3">
+					<a href="javascript:pageLoadClick('pages','personnage');" id="lien3">Personnages</a><div class="beatrice"><img src="images/beatrice_sprite.png" alt="beatrice" id="beatrice3" style="margin-left:0px;"></div><div class="porte"><img src="images/porte_sprite.png" alt="porte" id="porte3" style="margin-left:0px;"></div><div class="cadre" id="cadre3"><img src="images/cadre_porte.png" alt="cadre"></div>
+				</li>
+				<li id="li4">
+					<a href="javascript:pageLoadClick('pages','medias');" id="lien4">Autres Médias</a><div class="beatrice"><img src="images/beatrice_sprite.png" alt="beatrice" id="beatrice4" style="margin-left:0px;"></div><div class="porte"><img src="images/porte_sprite.png" alt="porte" id="porte4" style="margin-left:0px;"></div><div class="cadre" id="cadre4"><img src="images/cadre_porte.png" alt="cadre"></div>
+				</li>
+				<li id="li5">
+					<a href="javascript:pageLoadClick('pages','liens');" id="lien5">Liens Utiles</a><div class="beatrice"><img src="images/beatrice_sprite.png" alt="beatrice" id="beatrice5" style="margin-left:0px;"></div><div class="porte"><img src="images/porte_sprite.png" alt="porte" id="porte5" style="margin-left:0px;"></div><div class="cadre" id="cadre5"><img src="images/cadre_porte.png" alt="cadre"></div>
+				</li>
+				<li id="li6">
+					<a href="javascript:pageLoadClick('pages','contact');" id="lien6">Contacter</a><div class="beatrice"><img src="images/beatrice_sprite.png" alt="beatrice" id="beatrice6" style="margin-left:0px;"></div><div class="porte"><img src="images/porte_sprite.png" alt="porte" id="porte6" style="margin-left:0px;"></div><div class="cadre" id="cadre6"><img src="images/cadre_porte.png" alt="cadre"></div>
+				</li>
+			</ul>
+		</nav>
+		<!-------------Contenu des différentes pages---------------->
+		<div id="contenu">
+			<div id="date">Date de révision: 11 Octobre 2016</div>
+			<div class="pages" id="accueil">
+				<img src="images/mainScreen.png" alt="mainScreen" id="contenuMainScreen" style="display:block" onClick="bubbleClick('intro2');">
+			</div>
+			<div class="pages" id="personnage" style="display:none;opacity:0;">
+				<div class="personnages" id="contenuSubaru"  onClick="bubbleClick('infoSubaru2');">
+					Subaru<br>
+					<img src="images/subaru.png" alt="subaru">
+				</div>
+				<div class="personnages" id="contenuEmilia"  onClick="bubbleClick('infoEmilia2');">
+					Émilia<br>
+					<img src="images/emilia2.png" alt="emilia">
+				</div>
+				<div class="personnages" id="contenuPack"  onClick="bubbleClick('infoPuck2');">
+					Puck<br>
+					<img src="images/pack.png" alt="pack">
+				</div>
+				<div class="personnages" id="contenuBeatrice"  onClick="bubbleClick('infoBeatrice2');">
+					Béatrice<br>
+					<img src="images/beatrice.png" alt="beatrice2">
+				</div>
+				<div class="personnages" id="contenuElsa"  onClick="bubbleClick('infoElsa2');">
+					Elsa<br>
+					<img src="images/elsa.png" alt="elsa">
+				</div>
+				<div class="personnages" id="contenuRam"  onClick="bubbleClick('infoRam2');">
+					Ram<br>
+					<img src="images/ram.png" alt="ram">
+				</div>
+				<div class="personnages" id="contenuRem"  onClick="bubbleClick('infoRem2');">
+					Rem<br>
+					<img src="images/rem.png" alt="rem">
+				</div>
+				<div class="personnages" id="contenuReinhard"  onClick="bubbleClick('infoReinhard2');">
+					Reinhard<br>
+					<img src="images/Reinhard.png" alt="reinhard">
+				</div>
+				<div class="personnages" id="contenuRom" onClick="bubbleClick('infoRom2');">
+					Rom<br>
+					<img src="images/rom.png" alt="rom">
+				</div>
+				<div class="personnages" id="contenuRoswaal" onClick="bubbleClick('infoRoswaal2');">
+					Roswaal<br>
+					<img src="images/roswaal.png" alt="roswaal">
+				</div>
+				<div class="personnages" id="contenuWilhelm" onClick="bubbleClick('infoWilhelm2');">
+					Wilhelm<br>
+					<img src="images/wilhelm.png" alt="wilhelm">
+				</div>
+				<div class="personnages" id="contenuFelt" onClick="bubbleClick('infoFelt2');">
+					Felt<br>
+					<img src="images/felt.png" alt="felt">
+				</div>
+				<div class="personnages" id="contenuAnastasia" onClick="bubbleClick('infoAnastasia2');">
+					Anastasia<br>
+					<img src="images/anastasia.png" alt="anastasia">
+				</div>
+				<div class="personnages" id="contenuCrusch" onClick="bubbleClick('infoCrusch2');">
+					Crusch<br>
+					<img src="images/crusch.png" alt="crusch">
+				</div>
+				<div class="personnages" id="contenuFelix" onClick="bubbleClick('infoFelix2');">
+					Félix<br>
+					<img src="images/Felix.png" alt="felix">
+				</div>
+				<div class="personnages" id="contenuPriscilla" onClick="bubbleClick('infoPriscilla2');">
+					Priscilla<br>
+					<img src="images/priscilla.png" alt="priscilla">
+				</div>
+			</div>
+			<div class="pages" id="medias" style="display:none;opacity:0;">
+				<div class="media" id="webNovel" onClick="bubbleClick('infoWebNovel2');">
+					Web Novel<br>
+					<img src="images/Web_novel.jpeg" alt="webNovel">
+				</div>
+				<div class="media" id="lightNovel" onClick="bubbleClick('infoLightNovel2');">
+					Light Novel<br>
+					<img src="images/Light_novel.jpg" alt="lightNovel">
+				</div>
+				<div class="media" id="manga" onClick="bubbleClick('infoManga2');">
+					Manga<br>
+					<img src="images/manga.png" alt="manga">
+				</div>
+				<div class="media" id="anime" onClick="bubbleClick('infoAnime2');">
+					Anime<br>
+					<img src="images/anime.jpg" alt="anime">
+				</div>
+			</div>
+			<div class="pages" id="liens" style="display:none;opacity:0;">
+				<table id="table">
+					<tr>
+						<td colspan="2" class="center background_red"><h1>Liens utiles</h1></td>
+					</tr>
+					<tr>
+						<td rowspan="3" class="left"><a href="https://fr.wikipedia.org/" target="_blank"><img src="images/wikipedia.png" alt="wikipedia" id="wiki" title="wiki" class="background_red"></a></td>
+						<td><a href="https://fr.wikipedia.org/wiki/Re:Zero_kara_Hajimeru_Isekai_Seikatsu" target="_blank">Wikipedia de RE:Zero</a></td>
+					</tr>
+					<tr>
+						<td><a href="https://fr.wikipedia.org/wiki/White_Fox" target="_blank">White Fox, studio qui à animé Re:zero</a></td>
+					</tr>
+					<tr>
+						<td><a href="https://fr.wikipedia.org/wiki/Crunchyroll" target="_blank">Information sur crunchyroll(Site de diffusion d'anime japonais)</a></td>
+					</tr>
+					<tr>
+						<td class="left"><a href="http://rezero.wikia.com/wiki/Re:Zero_kara_Hajimeru_Isekai_Seikatsu" target="_blank">Page Wikia de RE:Zero</a></td>
+						<td><a href="http://fr.wikia.com/" target="_blank"><img src="images/Wikia.png" alt="wikia" title="wikia"></a></td>
+					</tr>
+					<tr>
+						<td class="background_red"><a href="https://www.reddit.com/" target="_blank"><div class="center"><img src="images/reddit.png" alt="reddit" title="reddit"><img src="images/reddit2.png" alt="reddit" title="reddit"></div></a></td>
+						<td><a href="https://www.reddit.com/r/Re_Zero" target="_blank">Reddit de RE:Zero</a></td>
+					</tr>
+					<tr>
+						<td class="left"><a href="http://www.crunchyroll.com/rezero-starting-life-in-another-world-" target="_blank">Streaming de RE:Zero</a></td>
+						<td><a href="http://www.crunchyroll.com/" target="_blank"><img src="images/crunchyroll.png" alt="crunchyroll" title="crunchyroll"></a></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="center background_red"><h1>Autres liens</h1></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="center">
+							<a href="http://ncode.syosetu.com/n2267be/" target="_blank">Web Novel gratuit(En japonais)</a><br><br>
+							<a href="https://translationchicken.com/" target="_blank">Traduction fan made du Web Novel</a><br><br>
+							<a href="https://www.amazon.com/Re-Starting-Another-World-World/dp/0316315303" target="_blank">Light Novel de RE:Zero sur Amazon</a><br><br>
+							<a href="https://www.amazon.com/Re-manga-Starting-Another-World/dp/0316315311" target="_blank">Manga de RE:Zero sur Amazon</a><br><br>
+							<a href="https://myanimelist.net/anime/31240/Re_Zero_kara_Hajimeru_Isekai_Seikatsu" target="_blank">Myanimelist de RE:zero</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="pages" id="contact" style="display:none;opacity:0;">
+				<form method="post" action="mailto:n1tommypepsi@gmail.com" enctype="text/plain" name="sondage" onSubmit="return validation(this)">
+					<h2 class="left">Formulaire</h2>
+					<LABEL for="nom">Nom :</LABEL>
+					<input type="text" size="30" id="nom" name="nom" class="vide" onfocus="blanc(this)">
+					<BR />
+					<LABEL for="prenom">Prénom :</LABEL>
+					<input type="text" size="30" id="prenom" name="prenom" class="vide" onfocus="blanc(this)">
+					<BR />
+					<LABEL for="favoris">Personnage favoris :</LABEL>
+					<select id="favoris" name="favoris" class="vide">
+						<option value="Subaru">Subaru</option>
+						<option value="Émilia">Émilia</option>
+						<option value="Puck">Puck</option>
+						<option value="Béatrice">Béatrice</option>
+						<option value="Elsa">Elsa</option>
+						<option value="Ram">Ram</option>
+						<option value="Rem">Rem</option>
+						<option value="Reinhard">Reinhard</option>
+						<option value="Rom">Rom</option>
+						<option value="Roswaal">Roswaal</option>
+						<option value="Wilhelm">Wilhelm</option>
+						<option value="Felt">Felt</option>
+						<option value="Anastasia">Anastasia</option>
+						<option value="Crusch">Crusch</option>
+						<option value="Félix">Félix</option>
+						<option value="Priscilla">Priscilla</option>
+					</select>
+					<BR />
+					<LABEL for="sexe">Sexe :</LABEL>
+					<input type="radio" id="sexe" name="sexe" checked value="Homme" />Homme<input type="radio" name="sexe" value="Femme" />Femme<BR />
+					<br />
+					<h2 class="left">Quel média avez vous lue ou écouté?</h2>
+					Web novel
+					<input type="checkbox" name="loisir" value="Web novel" />
+					Light novel
+					<input type="checkbox" name="loisir" value="Light novel" />
+					Manga
+					<input type="checkbox" name="loisir" value="Manga" />
+					Anime
+					<input type="checkbox" name="loisir" value="Anime" />
+					<br />
+					<h2 class="left">Commentaires</h2>
+					<textarea placeholder="Inscrivez votre commentaire ici" name="commentaires" rows="5" cols="100" ></textarea>
+					<br />
+					<LABEL for="courriel">Entrez votre courriel :</LABEL>
+					<input type="text" size="30" id="courriel" name="courriel" class="courriel" onfocus="blanc(this)">
+					<br />
+					<br />
+					<div><input type="submit" value="Soumettre" />
+						<input type="reset" value="Effacer et recommencer" />
+					</div>
+				</form>
+			</div>
+			<div class="pages" id="episodes" style="display:none;opacity:0;">
+				<div class="episodes" id="episodes1" onClick="bubbleClick('episode12');">
+					<span class="numEp">Épisode 1<br></span>
+					<span class="nomEp">La Fin du commencement et le début de la fin</span>
+				</div>
+				<div class="episodes" id="episodes2" onClick="bubbleClick('episode22');">
+					<span class="numEp">Épisode 2<br></span>
+					<span class="nomEp">Retrouvailles avec la sorcière</span>
+				</div>
+				<div class="episodes" id="episodes3" onClick="bubbleClick('episode32');">
+					<span class="numEp">Épisode 3<br></span>
+					<span class="nomEp">Une vie qui commence de zéro dans un autre monde</span>
+				</div>
+				<div class="episodes" id="episodes4" onClick="bubbleClick('episode42');">
+					<span class="numEp">Épisode 4<br></span>
+					<span class="nomEp">Dans l'intimité du manoir Roswaal</span>
+				</div>
+				<div class="episodes" id="episodes5" onClick="bubbleClick('episode52');">
+					<span class="numEp">Épisode 5<br></span>
+					<span class="nomEp">Au loin, le matin promis</span>
+				</div>
+				<div class="episodes" id="episodes6" onClick="bubbleClick('episode62');">
+					<span class="numEp">Épisode 6<br></span>
+					<span class="nomEp">Le Cliquetis de la chaîne</span>
+				</div>
+				<div class="episodes" id="episodes7" onClick="bubbleClick('episode72');">
+					<span class="numEp">Épisode 7<br></span>
+					<span class="nomEp">Retour à la case départ pour Subaru Natsuki</span>
+				</div>
+				<div class="episodes" id="episodes8" onClick="bubbleClick('episode82');">
+					<span class="numEp">Épisode 8<br></span>
+					<span class="nomEp">Sèche tes larmes après avoir pleuré sans répit</span>
+				</div>
+				<div class="episodes" id="episodes9" onClick="bubbleClick('episode92');">
+					<span class="numEp">Épisode 9<br></span>
+					<span class="nomEp">Le Sens du courage</span>
+				</div>
+				<div class="episodes" id="episodes10" onClick="bubbleClick('episode102');">
+					<span class="numEp">Épisode 10<br></span>
+					<span class="nomEp">Une méthode d'ogre</span>
+				</div>
+				<div class="episodes" id="episodes11" onClick="bubbleClick('episode112');">
+					<span class="numEp">Épisode 11<br></span>
+					<span class="nomEp">Rem</span>
+				</div>
+				<div class="episodes" id="episodes12" onClick="bubbleClick('episode122');">
+					<span class="numEp">Épisode 12<br></span>
+					<span class="nomEp">Retour à la capitale</span>
+				</div>
+				<div class="episodes" id="episodes13" onClick="bubbleClick('episode132');">
+					<span class="numEp">Épisode 13<br></span>
+					<span class="nomEp">Subaru Natsuki, chevalier autoproclamé</span>
+				</div>
+				<div class="episodes" id="episodes14" onClick="bubbleClick('episode142');">
+					<span class="numEp">Épisode 14<br></span>
+					<span class="nomEp">La Maladie du désespoir</span>
+				</div>
+				<div class="episodes" id="episodes15" onClick="bubbleClick('episode152');">
+					<span class="numEp">Épisode 15<br></span>
+					<span class="nomEp">Au bord de la folie</span>
+				</div>
+				<div class="episodes" id="episodes16" onClick="bubbleClick('episode162');">
+					<span class="numEp">Épisode 16<br></span>
+					<span class="nomEp">Les Désirs d'un porc</span>
+				</div>
+				<div class="episodes" id="episodes17" onClick="bubbleClick('episode172');">
+					<span class="numEp">Épisode 17<br></span>
+					<span class="nomEp">Couvert de honte</span>
+				</div>
+				<div class="episodes" id="episodes18" onClick="bubbleClick('episode182');">
+					<span class="numEp">Épisode 18<br></span>
+					<span class="nomEp">De zéro</span>
+				</div>
+				<div class="episodes" id="episodes19" onClick="bubbleClick('episode192');">
+					<span class="numEp">Épisode 19<br></span>
+					<span class="nomEp">Chasse à la baleine blanche</span>
+				</div>
+				<div class="episodes" id="episodes20" onClick="bubbleClick('episode202');">
+					<span class="numEp">Épisode 20<br></span>
+					<span class="nomEp">Wilhelm van Astrea</span>
+				</div>
+				<div class="episodes" id="episodes21" onClick="bubbleClick('episode212');">
+					<span class="numEp">Épisode 21<br></span>
+					<span class="nomEp">Un pari contre le désespoir</span>
+				</div>
+				<div class="episodes" id="episodes22" onClick="bubbleClick('episode222');">
+					<span class="numEp">Épisode 22<br></span>
+					<span class="nomEp">Éclair de paresse</span>
+				</div>
+				<div class="episodes" id="episodes23" onClick="bubbleClick('episode232');">
+					<span class="numEp">Épisode 23<br></span>
+					<span class="nomEp">Diabolique paresse</span>
+				</div>
+				<div class="episodes" id="episodes24" onClick="bubbleClick('episode242');">
+					<span class="numEp">Épisode 24<br></span>
+					<span class="nomEp">Le chevalier autoproclamé et le chevalier modèle</span>
+				</div>
+				<div class="episodes" id="episodes25" onClick="bubbleClick('episode252');">
+					<span class="numEp">Épisode 25<br></span>
+					<span class="nomEp">Une simple histoire</span>
+				</div>
+			</div>
+		</div>
+		<!--------------Boite de dialogue(description du contenu)---------------->
+		<div id="bubble">
+			<span class="dialogue" id="intro1">Cette bulle est un bug appuie sur espace pour la passer</span><!-- des fois la première bulle n'apparait pas, il faut donc mettre un span vide pour s'assurer d'au moins toujours avoir le premier dialogue -->
+			<span class="dialogue" id="intro2">Bonjours, je m'appelle Natsuki Subaru.</span>
+			<span class="dialogue" id="intro3">Je me suis retrouvé, d'un instant à l'autre, dans un univers fantastique.</span>
+			<span class="dialogue" id="intro4">Je serais votre guide dans ce monde à la fois magnifique et terrifiant.</span>
+			<span class="dialogue" id="intro5">*Déplacez Subaru à l'aide des flêches directionelle ou des touches W,A,S,D et appyer sur la barre d'espace pour intéragir avec les élément et avoir des explication sur l'univers*</span>
+			
+			<!--------------information de la page Épisode--------------------->
+			<span class="dialogue" id="episode11">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode12">C'est lors de mon retour du supermarché que je me suis retrouvé dans un monde parallèle.</span>
+			<span class="dialogue" id="episode13">Au début, j'étais séduit par ce monde fantastique s'épanouissant sous mes yeux, mais la jolie fille par laquelle j'espérais avoir été invoqué n'existait tout simplement pas... </span>
+			<span class="dialogue" id="episode14">Je croyais que toute personne transportée dans un monde parallèle aurait des pouvoirs magiques,</span>
+			<span class="dialogue" id="episode15">Mais j'ai réalisé à mes dépens que ce n'était pas le cas.</span>
+			
+			<span class="dialogue" id="episode21">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode22">Après avoir été attaqué par quelqu'un la première fois, éventré par Elsa la deuxième et poignardé dans le dos par des brutes la troisième, j'aurais dû être mort.</span>
+			<span class="dialogue" id="episode23">J'ai finalement compris que lorsque je mourais je retournais à un certain point dans le passé.</span>
+			<span class="dialogue" id="episode24">J'appelle ça "Le retour par la mort".</span>
+			<span class="dialogue" id="episode25">Dans l'espoir de changé le destin de Felt, Émilia, Rom et moi-même, je m'essaie pour une quatrième fois.</span>
+			
+			<span class="dialogue" id="episode31">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode32">J'essaie d'acheter l'insigne que Felt a volé pour la retourné à Émilia, mais Émilia arrive avant la fin des négociations et Elsa nous attaque quand même.</span>
+			
+			<span class="dialogue" id="episode41">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode42">Après avoir été sévèrement blessé par Elsa j'ai finalement réussi à survivre et me suis réveillé dans le manoir de Roswaal dans le royaume de Lugunica.</span>
+			
+			<span class="dialogue" id="episode51">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode52">Je vis maintenant dans le manoir de Roswaal.</span>
+			<span class="dialogue" id="episode53">Je travaille avec Ram et Rem et j'ai finalement réussi à avoir un rendez-vous avec Émilia.</span>
+			<span class="dialogue" id="episode54">Le seul problème est que je me réveille toujours au moment de mon premier jour au manoir...</span>
+			<span class="dialogue" id="episode55">Je ne comprends pas pourquoi "Le retour par la mort" s'active, mais je suis déterminé à répéter mes actions jusqu'à ce que ma promesse avec Émilia se réalise!</span>
+			
+			<span class="dialogue" id="episode61">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode62">C'est la troisième fois que je retourne à la première journée de mon arrivée au manoir.</span>
+			<span class="dialogue" id="episode63">La première fois, je suis devenu faible et je suis mort d'une raison inconnue durant mon sommeil et la deuxième fois j'ai été tué...</span>
+			<span class="dialogue" id="episode64">Je n'ai aucune idée de ce que le tueur veut, ni qui il est, alors j'ai décidé de quitté le manoir lors de la quatrième nuit pour voir ce qu'il se passe.</span>
+			
+			<span class="dialogue" id="episode71">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode72">Se tenant devant moi était quelqu'un que je n'aurais jamais pu imaginer.</span>
+			<span class="dialogue" id="episode73">La vérité sur l'identité du tueur m'a dévasté et j'avais l'impression que tout s'écroulait autour de moi alors que je mourais une autre fois.</span>
+			<span class="dialogue" id="episode74">Cette fois, la quatrième nuit c'est passé sans incident...</span>
+			<span class="dialogue" id="episode75">Mais la situation prend des allures inattendues.</span>
+			
+			<span class="dialogue" id="episode81">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode82">C'est maintenant la cinquième fois que je me réveille à la première journée de mon arrivée au manoir.</span>
+			<span class="dialogue" id="episode83">Déterminé de sauvé tout le monde cette fois, je fais un devoir de garder un sourire pour gagné la confiance du personnel du manoir.</span>
+			<span class="dialogue" id="episode84">Mais même si j'ai fait de mon mieux pour gagner leur confiance, mon corps ne pouvait pas suivre les intentions de mon coeur.</span>
+			
+			<span class="dialogue" id="episode91">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode92">Les morceaux éparpillés du puzzle se mettent finalement en place et je réalise que le shaman qui m'a maudit se trouve dans le village au pied de la montagne.</span>
+			<span class="dialogue" id="episode93">Je m'y dirige avec Ram et Rem et je m'assure que les villageois me touchent pour découvrir, avec l'aide de Béatrice, qui jette la malédiction.</span>
+			
+			<span class="dialogue" id="episode101">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode102">J'ai risqué ma vie pour sauver les enfants du village de la meute d'ulgarm, mais j'ai été puissamment maudit.</span>
+			<span class="dialogue" id="episode103">Même Béatrice ne pouvait pas défaire la malédiction et elle a dit qu'il ne me restait qu'une demi-journée à vivre.</span>
+			<span class="dialogue" id="episode104">Elle dit que la seule façon pour moi de survivre serait de vaincre la meute d'ulgarm, mais le temps n'est pas de mon côté.</span>
+			<span class="dialogue" id="episode105">J'étais prêt à abandonner, lorsque j'ai appris que Rem était parti dans la forêt par elle même.</span>
+			
+			<span class="dialogue" id="episode111">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode112">Rem rêve d'un évènement de son passé à elle et à Ram qu'elle préférerais oublié...</span>
+			<span class="dialogue" id="episode113">Un pêché pour lequel elle croit qu'elle ne devrait jamais être pardonné.</span>
+			<span class="dialogue" id="episode114">Lorsqu'elle se réveille, elle me dit qu'elle a recommis le même pêcher.</span>
+			<span class="dialogue" id="episode115">Lorsque nous étions encerclés par la meute d'ulgarm, j'ai décidé d'attirer leur attention pour que Ram et Rem puissent s'enfuir.</span>
+			
+			<span class="dialogue" id="episode121">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode122">À la demande du Conseil des Anciens qui gère Lugunica en l'absence du roi, Wilhelm et Felix visitent le manoir de Roswaal en tant qu'émissaire.</span>
+			<span class="dialogue" id="episode123">Émilia est demandée à la capitale impériale immédiatement, j'ai donc demandé de les accompagner.</span>
+			<span class="dialogue" id="episode124">Émilia m'a expliqué que ça ne serait pas des vacances, mais elle finit par accepter grâce à Rem et Roswaal.</span>
+			<span class="dialogue" id="episode125">Toutes les candidates pour devenir reine sont maintenant rassemblées et la sélection royale est maintenant en cours.</span>
+			
+			<span class="dialogue" id="episode131">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode132">Alors que la rencontre pour la sélection royale commençait avec Émilia, Priscilla, Crusch et Anastasia, Reinhard entra dans le hall avec Felt.</span>
+			<span class="dialogue" id="episode133">Selon la nouvelle prophétie de la pierre de dragon, il y aurait cinq prêtresses avec le potentiel pour devenir la prochaine souveraine du royaume.</span>
+			<span class="dialogue" id="episode134">Reinhard annonce que Felt est la cinquième prêtresse, mais elle ne semble pas vouloir faire partie de la sélection...</span>
+			
+			<span class="dialogue" id="episode141">Je voulais simplement la protégée... Ce sentiment n'était pas un mensonge.</span>
+			<span class="dialogue" id="episode142">Où est-ce que ça a mal tourné?</span>
+			<span class="dialogue" id="episode143">J'ai été rejeté par la seule personne qui voulait tout dire pour moi... </span>
+			<span class="dialogue" id="episode144">J'espère que je n'ai pas fait quelque chose d'irréversible...</span>
+			<span class="dialogue" id="episode145">J'ai appris que des mouvements étranges ont été détectés autour du domaine de Roswaal où Émilia et les autres sont.</span>
+			<span class="dialogue" id="episode146">Je suis certain que je peux les sauver d'une façon ou d'une autre, donc, malgré les oppositions de Rem et de Crusch, je vais retourné auprès d'Émilia...</span>
+			
+			<span class="dialogue" id="episode151">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode152">Ce n'est pas se que je voulais... </span>
+			<span class="dialogue" id="episode153">Frappé par le désespoir ma vision devint blanche et j'entendis: "Tu es arrivé trop tard".</span>
+			
+			<span class="dialogue" id="episode161">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode162">Je me suis encore réveillé devant le stand de fruit dans la capitale de Lugunica.</span>
+			<span class="dialogue" id="episode163">Je réalise que je suis dans une situation sans espoir...</span>
+			<span class="dialogue" id="episode164">J'essaie désespérément de trouver de l'aide auprès de Crusch, Priscilla et Anastasia, mais le temps continue de s'envoler.</span>
+			
+			<span class="dialogue" id="episode171">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode172">Une figure mystérieuse apparait dans la brume.</span>
+			<span class="dialogue" id="episode173">Alors que la créature émerge de la brume et attaque en poussant des souffles assourdissants, Rem détermine que nous ne pourrons pas échapper à la White Whale.</span>
+			
+			<span class="dialogue" id="episode181">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode182">Je ne peux rien faire...</span>
+			<span class="dialogue" id="episode183">Je ne peux sauver personne...</span>
+			<span class="dialogue" id="episode184">Il n'y a plus d'options...</span>
+			<span class="dialogue" id="episode185">Je n'ai plus de force...</span>
+			<span class="dialogue" id="episode186">Je dois m'enfuir avec Rem.</span>
+			
+			<span class="dialogue" id="episode191">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode192">Pour sauver Émilia, je négocie une alliance avec Crusch.</span>
+			<span class="dialogue" id="episode193">Elle a du mal à croire que je peux l'aider à abattre la White Whale, mais elle peut voir que je ne mens pas.</span>
+			
+			<span class="dialogue" id="episode201">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode202">J'ai dévoué tout se que j'avais et donné tout ce que je pouvais.</span>
+			<span class="dialogue" id="episode203">Ma passion a finalement capturé le coeur de Crusch, ainsi que la coopération d'Anastasia et nous nous préparons tous au combat contre la White Whale.</span>
+			
+			<span class="dialogue" id="episode211">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode212">Rem et moi perdont tous nos mots à la vue de se qui se déroule au-dessus de nos têtes.</span>
+			<span class="dialogue" id="episode213">Juste au moment où nous semblions avoir le dessus...</span>
+			<span class="dialogue" id="episode214">Malgré tout les sacrifices que ça a pris pour se rendre à ce point...</span>
+			<span class="dialogue" id="episode215">La bataille prend un tournant inattendu.</span>
+			
+			<span class="dialogue" id="episode221">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode222">La moitié des mercenaires qui étaient partis bloquer les routes durant la bataille contre la White Whale reviennent avec notre force principale.</span>
+			<span class="dialogue" id="episode223">Je conduis alors le chemin dans le bois du domaine de Roswaal dans l'espoir de trouver et détruire le culte de la sorcière.</span>
+			
+			<span class="dialogue" id="episode231">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode232">Nous nous dirigeons vers le manoir de Roswaal pour évacuer Émilia et tous ceux présents et nous arrêtons avant au village pour commencer l'évacuation des villageois.</span>
+			<span class="dialogue" id="episode233">Par contre, la situation prend un tournant que personne ne pouvait prévoir.</span>
+			
+			<span class="dialogue" id="episode241">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode242">Émilia a essayé de prévenir les villageois du danger qui arrivait et qu'ils devraient évacuer, mais elle n'a pas été bien accueillie.</span>
+			<span class="dialogue" id="episode243">Alors qu'elle se demande ce qu'elle peut faire de plus, Wilhelm arrive au manoir avec un message.</span>
+			
+			<span class="dialogue" id="episode251">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="episode252">C'est le combat final contre Bételgeuse et je vais le vaincre à l'aide de Julius.</span>
+			
+			<!--------------information de la page Personnage--------------------->
+			<span class="dialogue" id="infoEmilia1">Cette bulle est un bug appuie sur espace pour la passer</span> 
+			<span class="dialogue" id="infoEmilia2">Émilia est l’amour de ma vie et un jour je la marierais!</span>
+			<span class="dialogue" id="infoEmilia3">Je veux dire, elle est parfaite, ces cheveux argenté, ces yeux mignon et innocent… </span>
+			<span class="dialogue" id="infoEmilia4">tout est parfait! </span>
+			<span class="dialogue" id="infoEmilia5">Cerise sur le gâteau, elle est une bonne guerrière!</span>
+			<span class="dialogue" id="infoEmilia6">Mais elle n’est pas invincible…</span>
+			<span class="dialogue" id="infoEmilia7">C’est pourquoi je dois la protéger!</span>
+			
+			<span class="dialogue" id="infoPuck1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoPuck2">Ça c’est Puck.</span>
+			<span class="dialogue" id="infoPuck3">Il est très proche d’Émilia, il la considère comme sa fille.</span>
+			<span class="dialogue" id="infoPuck4">Il est le chat le plus adorable, mais ne soyez pas trompé par son apparence</span>
+			<span class="dialogue" id="infoPuck5">ce petit chat est l’être le plus puissant que j’ai croisé.</span>
+			
+			<span class="dialogue" id="infoBeatrice1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoBeatrice2">Ça c’est Béatrice, j’adore l’agacer. </span>
+			<span class="dialogue" id="infoBeatrice3">Elle semble peut être petite et fragile</span>
+			<span class="dialogue" id="infoBeatrice4">Mais elle vous le fera regretter si vous l’ennuyer un peu trop…</span>
+			<span class="dialogue" id="infoBeatrice5">Je l’ai appris à la dur…</span>
+			
+			<span class="dialogue" id="infoElsa1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoElsa2">Je n’ai rien de bon à dire sur elle… </span>
+			<span class="dialogue" id="infoElsa3">Simplement que si tu la croise, prie pour mourir rapidement…</span>
+			
+			<span class="dialogue" id="infoRam1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoRam2">Info à venir</span>
+			
+			<span class="dialogue" id="infoRem1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoRem2">Info à venir</span>
+			
+			<span class="dialogue" id="infoReinhard1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoReinhard2">Info à venir</span>
+			
+			<span class="dialogue" id="infoRom1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoRom2">Lui c’est Rom.</span>
+			<span class="dialogue" id="infoRom3">Clairement, il est fort! Mais malgré son apparence il est assez gentil. </span>
+			<span class="dialogue" id="infoRom4">De ce que j’ai cru comprendre, il est comme un père pour Felt…</span>
+			<span class="dialogue" id="infoRom5">Dommage que les circonstances on fait que nous n’avons pas beaucoup parlé.</span>
+			
+			<span class="dialogue" id="infoPriscilla1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoPriscilla2">Priscilla est une des candidates pour le trône. </span>
+			<span class="dialogue" id="infoPriscilla3">Je n’en connais pas beaucoup sur elle, mais elle veut devenir reine... parce que!</span>
+			<span class="dialogue" id="infoPriscilla4">Sérieusement, je ne connais pas ses raisons...</span>
+			<span class="dialogue" id="infoPriscilla5">Elle se fou de tout le monde et elle ne se soucie que d’elle-même…</span>
+			<span class="dialogue" id="infoPriscilla6">J’espère qu’elle ne deviendra pas reine…</span>
+			
+			<span class="dialogue" id="infoFelt1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoFelt2">Felt était une voleuse, mais elle est maintenant une des candidates pour le trône… </span>
+			<span class="dialogue" id="infoFelt3">Je ne sais pas vraiment ce qui s’est passé entre temps.</span>
+			<span class="dialogue" id="infoFelt4">Je l’ai rencontré a cause qu’elle avait volé l’insigne d’Émilia…</span>
+			<span class="dialogue" id="infoFelt5">pas vraiment une bonne première impression, mais finalement elle est plutôt sympathique.</span>
+			
+			<span class="dialogue" id="infoCrusch1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoCrusch2">Crusch est une des candidates pour le trône et une des favorites.</span>
+			<span class="dialogue" id="infoCrusch3">Elle est très sérieuse et elle considère qu’elle doit avoir un gain lorsqu’elle aide quelqu’un.</span>
+			<span class="dialogue" id="infoCrusch4">Elle est fiable, une bonne politicienne et une grande tacticienne.</span>
+			<span class="dialogue" id="infoCrusch5">Son but est de rendre sa nation indépendante.</span>
+			
+			<span class="dialogue" id="infoAnastasia1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoAnastasia2">Anastasia est une des candidates pour le trône. </span>
+			<span class="dialogue" id="infoAnastasia3">Un peu comme Priscilla, je ne connais pas grand-chose sur elle...</span>
+			<span class="dialogue" id="infoAnastasia4">À pars qu’elle est très avare et est toujours à la recherche d’information à utiliser contre les gens.</span>
+			
+			<span class="dialogue" id="infoRoswaal1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoRoswaal2">Info à venir</span>
+			
+			<span class="dialogue" id="infoFelix1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoFelix2">Info à venir</span>
+			
+			<span class="dialogue" id="infoSubaru1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoSubaru2">Info à venir</span>
+			
+			<span class="dialogue" id="infoWilhelm1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoWilhelm2">Info à venir</span>
+			
+			<!--------------information de la page Autre Médias--------------------->
+			<span class="dialogue" id="infoWebNovel1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoWebNovel2">C'est ici que tout à commencé.</span>
+			<span class="dialogue" id="infoWebNovel3">L'auteur Nagatsuki Tappei à décidé de partagé son histoire sur un réseau social japonais permettant à de petits auteurs de partagé leurs histoire.</span>
+			<span class="dialogue" id="infoWebNovel4">Le web novel est toujours en écriture, l'auteur y partage ses ébauches avant de les adapter au light novel</span>
+			<span class="dialogue" id="infoWebNovel5">Il y a présentement assez de contenue pour se rendre jusqu'à 30 volumes de light novel</span>
+			
+			<span class="dialogue" id="infoLightNovel1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoLightNovel2">Après quelque temps, les droits de RE:Zero ont été acquis par l'éditeur Media Factory qui publie la version papier</span>
+			<span class="dialogue" id="infoLightNovel3">L'auteur Nagatsuki Tappei y adapte sont histoire de façon plus soigné et destiné à un plus grand publique.</span>
+			<span class="dialogue" id="infoLightNovel4">Le light novel est toujours en écriture et il y a présentement 9 volumes sortis en japonais et 3 en anglais.</span>
+			
+			<span class="dialogue" id="infoManga1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoManga2">RE:Zero a aussi été adapté en 3 différent manga.</span>
+			<span class="dialogue" id="infoManga3">Ces 3 mangas sont fait par 3 artistes différent et publier par 3 magazine différent.</span>
+			<span class="dialogue" id="infoManga4">Ils sont présentement toujours en publication.</span>
+			
+			<span class="dialogue" id="infoAnime1">Cette bulle est un bug appuie sur espace pour la passer</span>
+			<span class="dialogue" id="infoAnime2">RE:Zero à finalement été adapté en anime.</span>
+			<span class="dialogue" id="infoAnime3">25 épisodes de 25 minutes animé par le studio White Fox.</span>
+			<span class="dialogue" id="infoAnime4">L'anime a commencé a être diffuser le 4 avril 2016 et s'est teminée le 19 septembre 2016.</span>
+			<span style="position:relative;top:10px;float:right;font-size:10px;">▼</span>
+		</div>
+		<!---------------------instruction------------------->
+		<div id="instruction">
+			<span class="instruction" id="intro">Appuyer sur la barre d'espacement pour revoire l'intro</span>
+			<span class="instruction" id="instrucDialogue">Appuyer sur espace pour continuer ou sur ESC. pour passer</span>
+			
+			<span class="instruction" id="instrucEpisode1">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 1</span>
+			<span class="instruction" id="instrucEpisode2">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 2</span>
+			<span class="instruction" id="instrucEpisode3">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 3</span>
+			<span class="instruction" id="instrucEpisode4">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 4</span>
+			<span class="instruction" id="instrucEpisode5">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 5</span>
+			<span class="instruction" id="instrucEpisode6">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 6</span>
+			<span class="instruction" id="instrucEpisode7">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 7</span>
+			<span class="instruction" id="instrucEpisode8">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 8</span>
+			<span class="instruction" id="instrucEpisode9">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 9</span>
+			<span class="instruction" id="instrucEpisode10">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 10</span>
+			<span class="instruction" id="instrucEpisode11">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 11</span>
+			<span class="instruction" id="instrucEpisode12">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 12</span>
+			<span class="instruction" id="instrucEpisode13">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 13</span>
+			<span class="instruction" id="instrucEpisode14">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 14</span>
+			<span class="instruction" id="instrucEpisode15">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 15</span>
+			<span class="instruction" id="instrucEpisode16">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 16</span>
+			<span class="instruction" id="instrucEpisode17">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 17</span>
+			<span class="instruction" id="instrucEpisode18">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 18</span>
+			<span class="instruction" id="instrucEpisode19">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 19</span>
+			<span class="instruction" id="instrucEpisode20">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 20</span>
+			<span class="instruction" id="instrucEpisode21">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 21</span>
+			<span class="instruction" id="instrucEpisode22">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 22</span>
+			<span class="instruction" id="instrucEpisode23">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 23</span>
+			<span class="instruction" id="instrucEpisode24">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 24</span>
+			<span class="instruction" id="instrucEpisode25">Appuyer sur la barre d'espacement pour avoir le résumé de l'épisode 25</span>
+			
+			<span class="instruction" id="instrucPorte1">Appuyer sur la barre d'espacement pour intéragir avec la porte</span>
+			<span class="instruction" id="instrucPorte2">Appuyer sur la barre d'espacement pour intéragir avec la porte</span>
+			<span class="instruction" id="instrucPorte3">Appuyer sur la barre d'espacement pour intéragir avec la porte</span>
+			<span class="instruction" id="instrucPorte4">Appuyer sur la barre d'espacement pour intéragir avec la porte</span>
+			<span class="instruction" id="instrucPorte5">Appuyer sur la barre d'espacement pour intéragir avec la porte</span>
+			<span class="instruction" id="instrucPorte6">Appuyer sur la barre d'espacement pour intéragir avec la porte</span>
+			
+			<span class="instruction" id="instrucEmilia">Appuyer sur espace pour avoir des informations sur Émilia</span>
+			<span class="instruction" id="instrucPuck">Appuyer sur espace pour avoir des informations sur Puck</span>
+			<span class="instruction" id="instrucBeatrice">Appuyer sur espace pour avoir des informations sur Béatrice</span>
+			<span class="instruction" id="instrucElsa">Appuyer sur espace pour avoir des informations sur Elsa</span>
+			<span class="instruction" id="instrucRam">Appuyer sur espace pour avoir des informations sur Ram</span>
+			<span class="instruction" id="instrucRem">Appuyer sur espace pour avoir des informations sur Rem</span>
+			<span class="instruction" id="instrucReinhard">Appuyer sur espace pour avoir des informations sur Reinhard</span>
+			<span class="instruction" id="instrucRom">Appuyer sur espace pour avoir des informations sur Rom</span>
+			<span class="instruction" id="instrucRoswaal">Appuyer sur espace pour avoir des informations sur Roswaal</span>
+			<span class="instruction" id="instrucFelt">Appuyer sur espace pour avoir des informations sur Felt</span>
+			<span class="instruction" id="instrucAnastasia">Appuyer sur espace pour avoir des informations sur Anastasia</span>
+			<span class="instruction" id="instrucCrusch">Appuyer sur espace pour avoir des informations sur Crusch</span>
+			<span class="instruction" id="instrucFelix">Appuyer sur espace pour avoir des informations sur Felix</span>
+			<span class="instruction" id="instrucPriscilla">Appuyer sur espace pour avoir des informations sur Priscilla</span>
+			<span class="instruction" id="instrucSubaru">Appuyer sur espace pour avoir des informations sur Subaru</span>
+			<span class="instruction" id="instrucWilhelm">Appuyer sur espace pour avoir des informations sur Wilhelm</span>
+			
+			<span class="instruction" id="instrucWebNovel">Appuyer sur espace pour avoir des informations sur le Web Novel</span>
+			<span class="instruction" id="instrucLightNovel">Appuyer sur espace pour avoir des informations sur le Light Novel</span>
+			<span class="instruction" id="instrucManga">Appuyer sur espace pour avoir des informations sur le Manga</span>
+			<span class="instruction" id="instrucAnime">Appuyer sur espace pour avoir des informations sur l'anime</span>
+		</div>
+		<!---------------------Personnage------------------->
+		<div id="player">
+			<img src="images/subaru_sprite.png" alt="player" id="playerimg" style="margin-left: 0px;">
+			<img src="images/subaru_sprite_dialog.png" alt="playler" id="playerspeak" style="margin-left: 0px;display:none;">
+			<img src="images/subaru_revole.png" alt="player" id="revole" style="margin-left: 0px;display:none;">
+		</div>
+	</body>
+</html>
